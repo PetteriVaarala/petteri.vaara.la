@@ -1,7 +1,7 @@
 ---
 title: "Raspberry3 Boot USB"
 date: 2020-10-22T23:46:47+03:00
-draft: true
+draft: false
 ---
 
 ## USB host boot mode
