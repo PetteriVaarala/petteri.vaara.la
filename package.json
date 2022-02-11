@@ -1,0 +1,17 @@
+{
+  "name": "notes",
+  "version": "1.0.0",
+  "description": "just doodling some notes",
+  "main": "docs/.vuepress/theme/index.js",
+  "repository": "git@gitlab.com:zone-c/notes.git",
+  "author": "Petteri Vaarala <petteri.vaarala@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "vuepress": "^1.9.7",
+    "vuepress-theme-casper": "^3.0.1"
+  },
+  "scripts": {
+    "docs:dev": "vuepress dev docs",
+    "docs:build": "vuepress build docs"
+  }
+}
