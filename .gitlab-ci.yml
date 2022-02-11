@@ -1,0 +1,21 @@
+# choose a docker image to use
+image: node:14-buster
+
+pages:
+  # trigger deployment on every push to main branch
+  only:
+  - main
+
+  # cache node_modules
+  cache:
+    paths:
+    - node_modules/
+
+  # install dependencies and run build script
+  script:
+  - yarn --frozen-lockfile
+  - yarn docs:build --dest public
+
+  artifacts:
+    paths:
+    - public
