@@ -1,6 +1,0 @@
-[submodule "themes/vuepress-theme-casper"]
-	path = themes/vuepress-theme-casper
-	url = https://github.com/alexander-heimbuch/vuepress-theme-casper.git
-[submodule "themes/vuepress-theme-blog"]
-	path = themes/vuepress-theme-blog
-	url = https://github.com/vuepress/vuepress-theme-blog.git
