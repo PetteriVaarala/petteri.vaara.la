@@ -2,7 +2,7 @@ module.exports = {
   title: 'Just some random notes',
   description: '',
   theme: 'casper',
-  base: '/petterivaarala.gitlab.io/',
+  base: '',
   markdown: {
     anchor: {
       permalink: false,
