@@ -14,6 +14,7 @@ Enable USB host boot mode
 echo program_usb_boot_mode=1 | sudo tee -a /boot/config.txt
 ```
 
+
 Reboot and check OTP is set correctly:
 
 ```bash
