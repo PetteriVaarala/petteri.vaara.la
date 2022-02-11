@@ -2,9 +2,7 @@
 image: node:14-buster
 
 pages:
-  # trigger deployment on every push to main branch
-  only:
-  - main
+  stage: deploy
 
   # cache node_modules
   cache:
@@ -19,3 +17,6 @@ pages:
   artifacts:
     paths:
     - public
+
+  rules:
+    - if: $CI_COMMIT_BRANCH == $CI_DEFAULT_BRANCH
