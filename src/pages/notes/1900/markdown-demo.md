@@ -2,13 +2,10 @@
 draft: false
 layout: "../../../layouts/Note.astro"
 title: Markdown demo
-pubDate: 1900-01-01
-type: post
+published: 1900-01-01
 tags:
   - demo
   - markdown
-categories:
-  - foobar
 ---
 
 This is a demo markdown that shows most use cases, click **Read more** below to see entire post.

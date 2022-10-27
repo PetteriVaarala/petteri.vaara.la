@@ -3,7 +3,7 @@ draft: true
 layout: "../../../layouts/Note.astro"
 title: "Markdown Style Guide"
 description: "Here is a sample of some basic Markdown syntax that can be used when writing Markdown content in Astro."
-pubDate: "Jul 01 1900"
+published: "Jul 01 1900"
 heroImage: "/placeholder-hero.jpg"
 ---
 

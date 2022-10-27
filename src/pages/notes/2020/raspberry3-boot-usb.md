@@ -1,8 +1,7 @@
 ---
 layout: "../../../layouts/Note.astro"
 title: Raspberry3 Boot USB
-pubDate: 2020-10-22
-type: post
+published: 2020-10-22
 tags:
   - raspberry
 ---

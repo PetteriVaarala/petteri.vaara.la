@@ -1,13 +1,10 @@
 ---
 layout: "../../../layouts/Note.astro"
 title: brew update-reset
-pubDate: "2022-03-02"
-type: post
+published: "2022-03-02"
 tags:
   - linux
   - brew
-categories:
-  - linux
 ---
 
 ## brew update fails
