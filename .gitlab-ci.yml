@@ -1,5 +1,5 @@
 # choose a docker image to use
-image: node:14-buster
+image: node:14
 
 pages:
   stage: deploy
@@ -11,12 +11,14 @@ pages:
 
   # install dependencies and run build script
   script:
-  - yarn --frozen-lockfile
-  - yarn docs:build --dest public
+  - yarn
+  - yarn build
 
   artifacts:
     paths:
     - public
 
-  rules:
-    - if: $CI_COMMIT_BRANCH == $CI_DEFAULT_BRANCH
+  only:
+    # Trigger a new build and deploy only when there is a push to the
+    # branch(es) below
+    - $CI_DEFAULT_BRANCH
