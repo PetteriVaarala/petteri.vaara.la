@@ -1,9 +1,12 @@
 ---
+import { SITE_VERSION } from "../config";
 const today = new Date();
 ---
 
 <footer>
-	&copy; {today.getFullYear()} YOUR NAME HERE. All rights reserved.
+	&copy; {today.getFullYear()} Just some random notes. All rights reserved. {
+		SITE_VERSION
+	}
 </footer>
 <style>
 	footer {
