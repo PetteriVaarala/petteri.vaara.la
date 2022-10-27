@@ -1,12 +1,14 @@
 ---
-import { SITE_VERSION } from "../config";
+import Copyright from "./Copyright.astro";
+import Version from "./Version.astro";
+
 const today = new Date();
 ---
 
 <footer>
-	&copy; {today.getFullYear()} Just some random notes. All rights reserved. {
-		SITE_VERSION
-	}
+	<Copyright />
+	Just some random notes. All rights reserved.
+	<Version />
 </footer>
 <style>
 	footer {
