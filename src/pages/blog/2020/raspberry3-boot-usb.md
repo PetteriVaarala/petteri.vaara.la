@@ -1,6 +1,7 @@
 ---
+layout: "../../../layouts/BlogPost.astro"
 title: Raspberry3 Boot USB
-publish: 2020-10-22
+pubDate: 2020-10-22
 type: post
 tags:
   - raspberry

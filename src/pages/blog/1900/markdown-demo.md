@@ -1,6 +1,7 @@
 ---
+layout: "../../../layouts/BlogPost.astro"
 title: Markdown demo
-publish: 1900-01-01
+pubDate: 1900-01-01
 type: post
 tags:
   - demo

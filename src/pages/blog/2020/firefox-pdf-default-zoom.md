@@ -1,6 +1,7 @@
 ---
+layout: "../../../layouts/BlogPost.astro"
 title: Firefox PDF Reader Default Zoom
-publish: 2020-10-22
+pubDate: 2020-10-22
 type: post
 tags:
   - firefox
