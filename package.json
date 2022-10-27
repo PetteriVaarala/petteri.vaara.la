@@ -15,9 +15,10 @@
     "clean": "rm -rf dist/ && rm -rf node_modules/"
   },
   "dependencies": {
-    "astro": "^1.5.3",
     "@astrojs/mdx": "^0.11.5",
     "@astrojs/rss": "^1.0.2",
-    "@astrojs/sitemap": "^1.0.0"
+    "@astrojs/sitemap": "^1.0.0",
+    "@fortawesome/fontawesome-free": "^6.2.0",
+    "astro": "^1.5.3"
   }
 }
