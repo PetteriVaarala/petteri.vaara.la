@@ -13,39 +13,11 @@ body {
 	word-wrap: break-word;
 	overflow-wrap: break-word;
 	line-height: 1.5;
-	color: #444;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-strong,
-b {
-	color: #222;
-}
-
-a {
-	color: #3273dc;
+	color: #555;
 }
 
 nav a {
 	margin-right: 10px;
-}
-
-textarea {
-	width: 100%;
-	font-size: 16px;
-}
-
-input {
-	font-size: 16px;
-}
-
-content {
-	line-height: 1.6;
 }
 
 table {
@@ -71,8 +43,7 @@ pre>code {
 }
 
 blockquote {
-	border: 1px solid #999;
-	color: #222;
+	border-left: 1px solid #ccc;
 	padding: 2px 0px 2px 20px;
 	margin: 0px;
 	font-style: italic;
