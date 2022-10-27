@@ -2,7 +2,7 @@
 draft: false
 layout: "../../../layouts/Note.astro"
 title: Markdown demo
-published: 1900-01-01
+pubDate: 1900-01-01
 tags:
   - demo
   - markdown
