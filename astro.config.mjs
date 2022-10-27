@@ -6,5 +6,7 @@ import sitemap from '@astrojs/sitemap';
 // https://astro.build/config
 export default defineConfig({
 	site: 'https://notes.petteri.vaara.la',
+	outDir: 'public',
+	publicDir: 'static',
 	integrations: [mdx(), sitemap()],
 });
