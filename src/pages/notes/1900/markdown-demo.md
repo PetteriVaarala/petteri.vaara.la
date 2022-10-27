@@ -1,5 +1,5 @@
 ---
-layout: "../../../layouts/BlogPost.astro"
+layout: "../../../layouts/Note.astro"
 title: Markdown demo
 pubDate: 1900-01-01
 type: post

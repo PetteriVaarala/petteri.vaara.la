@@ -1,7 +1,7 @@
 ---
-layout: "../../../layouts/BlogPost.astro"
+layout: "../../../layouts/Note.astro"
 title: brew update-reset
-pubDate: 2022-03-02
+pubDate: "2022-03-02"
 type: post
 tags:
   - linux
