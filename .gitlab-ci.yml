@@ -19,6 +19,6 @@ pages:
     - public
 
   only:
-    # Trigger a new build and deploy only when there is a push to the
-    # branch(es) below
-    - $CI_DEFAULT_BRANCH
+    variables:
+    - $CI_PIPELINE_SOURCE == "web"               # allow manual jobs from web
+    - $CI_COMMIT_REF_SLUG == $CI_DEFAULT_BRANCH  # autodeploy from master/main
