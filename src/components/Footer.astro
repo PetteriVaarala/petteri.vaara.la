@@ -1,13 +1,14 @@
 ---
 import Copyright from "./Copyright.astro";
 import Version from "./Version.astro";
+import { SITE_DESCRIPTION } from "../config";
 
 const today = new Date();
 ---
 
 <footer>
 	<Copyright />
-	Just some random notes. All rights reserved.
+	{SITE_DESCRIPTION} All rights reserved.
 	<Version />
 </footer>
 <style>

@@ -1,6 +1,6 @@
 {
   "name": "notes",
-  "description": "just doodling some notes",
+  "description": "Just doodling some notes.",
   "repository": "git@gitlab.com:zone-c/notes.git",
   "author": "Petteri Vaarala <petteri.vaarala@gmail.com>",
   "version": "1.0.0",
