@@ -6,12 +6,14 @@ import { SITE_TITLE, SITE_DESCRIPTION } from "../config";
 ---
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="dark">
 	<head>
 		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
 	</head>
-	<body>
-		<div class="w-full h-screen bg-programmer bg-cover bg-center">
+	<body class="dark:bg-[#0e0e0e]">
+		<div
+			class="w-full h-screen dark:bg-programmer bg-mtbr bg-cover bg-center dark:brightness-[0.3]"
+		>
 			<div class="w-full h-full flex flex-col items-center backdrop-blur-lg">
 				<Header />
 				<main class="md:filter-none blur-none">
