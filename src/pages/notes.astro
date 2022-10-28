@@ -34,33 +34,41 @@ nonDraftPosts.sort(
 			ul li a:visited {
 				color: #8e32dc;
 			}
+			.content {
+				padding: 20px;
+				max-width: 65ch;
+				margin: auto;
+				text-align: left;
+			}
 		</style>
 	</head>
 	<body>
-		<Header />
-		<main>
-			<section>
-				<ul>
-					{
-						nonDraftPosts.map((post) => (
-							<li>
-								<time datetime={post.frontmatter.pubDate}>
-									{new Date(post.frontmatter.pubDate).toLocaleDateString(
-										"en-us",
-										{
-											year: "numeric",
-											month: "short",
-											day: "numeric",
-										}
-									)}
-								</time>
-								<a href={post.url}>{post.frontmatter.title}</a>
-							</li>
-						))
-					}
-				</ul>
-			</section>
-		</main>
-		<Footer />
+		<div class="content">
+			<Header />
+			<main>
+				<section>
+					<ul>
+						{
+							nonDraftPosts.map((post) => (
+								<li>
+									<time datetime={post.frontmatter.pubDate}>
+										{new Date(post.frontmatter.pubDate).toLocaleDateString(
+											"en-us",
+											{
+												year: "numeric",
+												month: "short",
+												day: "numeric",
+											}
+										)}
+									</time>
+									<a href={post.url}>{post.frontmatter.title}</a>
+								</li>
+							))
+						}
+					</ul>
+				</section>
+			</main>
+			<Footer />
+		</div>
 	</body>
 </html>

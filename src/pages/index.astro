@@ -11,10 +11,14 @@ import { SITE_TITLE, SITE_DESCRIPTION } from "../config";
 		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
 	</head>
 	<body>
-		<Header />
-		<main>
-			<h1>Hello, Astronaut!</h1>
-		</main>
-		<Footer />
+		<div class="w-full h-screen bg-programmer bg-cover bg-center">
+			<div class="w-full h-full flex flex-col items-center backdrop-blur-lg">
+				<Header />
+				<main class="md:filter-none blur-none">
+					<h1>Hello, Astronaut!!</h1>
+				</main>
+				<Footer />
+			</div>
+		</div>
 	</body>
 </html>
