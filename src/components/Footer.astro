@@ -2,18 +2,12 @@
 import Copyright from "./Copyright.astro";
 import Version from "./Version.astro";
 import { SITE_DESCRIPTION } from "../config";
-
-const today = new Date();
 ---
 
-<footer>
-	<Copyright />
-	{SITE_DESCRIPTION} All rights reserved.
-	<Version />
+<footer class="w-full z-50 bottom-0 py-5 absolute text-center">
+	<span class="pt-0.5 font-header text-white">
+		<Copyright />
+		<sub>{SITE_DESCRIPTION} All rights reserved.</sub>
+		<Version />
+	</span>
 </footer>
-<style>
-	footer {
-		padding: 25px;
-		text-align: center;
-	}
-</style>

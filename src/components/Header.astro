@@ -3,31 +3,23 @@ import HeaderLink from "./HeaderLink.astro";
 import { SITE_TITLE } from "../config";
 ---
 
-<header>
-	<h2>
-		{SITE_TITLE}
-	</h2>
-	<nav>
-		<HeaderLink href="/">Home</HeaderLink>
-		<HeaderLink href="/notes">Notes</HeaderLink>
-		<HeaderLink href="/about">About</HeaderLink>
-		<HeaderLink
-			href="https://github.com/PetteriVaarala"
-			target="_blank"
-			class="fa-brands fa-github fa-lg"
-		/>
-		<HeaderLink
-			href="https://www.linkedin.com/in/petterivaarala/"
-			target="_blank"
-			class="fa-brands fa-linkedin-in fa-lg"
-		/>
-	</nav>
+<header class="w-full z-50 top-0 py-5 absolute">
+	<div class="max-w-5xl container mx-auto">
+		<div class="px-12 flex justify-between">
+			<ul class="flex items-center">
+				<li class="group">
+					<HeaderLink href="/">petteri.vaara.la</HeaderLink>
+				</li>
+			</ul>
+			<ul class="flex items-center">
+				<li class="group pl-6">
+					<HeaderLink href="/notes">Notes</HeaderLink>
+				</li>
+
+				<li class="group pl-6">
+					<HeaderLink href="/about">About</HeaderLink>
+				</li>
+			</ul>
+		</div>
+	</div>
 </header>
-<style>
-	header {
-		margin: 0em 0 2em;
-	}
-	h2 {
-		margin: 0.5em 0;
-	}
-</style>

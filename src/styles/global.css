@@ -11,7 +11,7 @@ body {
 	word-wrap: break-word;
 	overflow-wrap: break-word;
 	line-height: 1.5;
-	color: #555;
+	color: #fff;
 }
 
 nav a {
@@ -45,9 +45,4 @@ blockquote {
 	padding: 2px 0px 2px 20px;
 	margin: 0px;
 	font-style: italic;
-}
-
-sub {
-	vertical-align: baseline;
-	font-size: x-small;
 }
