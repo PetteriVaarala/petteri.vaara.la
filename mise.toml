@@ -2,3 +2,48 @@
 deno = "2.2.12"
 node = "23.9.0"
 pnpm = "10.5.1"
+
+[tasks.init]
+run = "deno install --allow-scripts"
+description = "Install dependencies"
+
+[tasks.dev]
+run = "deno task dev"
+description = "Start the development server with hot-reload"
+depends = ["init"]
+
+[tasks.build]
+run = "deno task build"
+description = "Build the project for production"
+depends = ["init"]
+
+[tasks.start]
+run = "deno task start"
+description = "Start the production server"
+depends = ["init"]
+
+[tasks.lint]
+run = "deno lint"
+description = "Run the linter to check code quality"
+depends = ["init"]
+
+[tasks.test]
+run = "deno test"
+description = "Run the test suite"
+depends = ["init"]
+
+[tasks.preview]
+run = "deno task preview"
+description = "Preview the production build locally"
+depends = ["init"]
+
+[tasks.format]
+run = "deno fmt"
+description = "Format code according to style guidelines"
+depends = ["init"]
+
+[tasks.clean]
+run = "deno clean && deno task clean"
+description = "Clean build artifacts and cache"
+depends = ["init"]
+
