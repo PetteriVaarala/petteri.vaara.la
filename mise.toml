@@ -1,7 +1,7 @@
 [tools]
-deno = "2.2.12"
-node = "23.9.0"
-pnpm = "10.5.1"
+deno = "2.3.3"
+node = "24.1.0"
+pnpm = "10.11.0"
 
 [tasks.init]
 run = "deno install --allow-scripts"
@@ -47,3 +47,12 @@ run = "deno clean && deno task clean"
 description = "Clean build artifacts and cache"
 depends = ["init"]
 
+[tasks.update-minor]
+run = "deno outdated --update --interactive --compatible"
+description = "Update dependencies to newest minor version"
+depends = ["init"]
+
+[tasks.update-latest]
+run = "deno outdated --update --interactive --latest"
+description = "Update dependencies to newest minor version"
+depends = ["init"]
