@@ -7,18 +7,18 @@ pages:
   # cache node_modules
   cache:
     paths:
-    - node_modules/
+      - node_modules/
 
   # install dependencies and run build script
   script:
-  - yarn
-  - yarn build
+    - yarn
+    - yarn build
 
   artifacts:
     paths:
-    - public
+      - public
 
   only:
     variables:
-    - $CI_PIPELINE_SOURCE == "web"               # allow manual jobs from web
-    - $CI_COMMIT_REF_SLUG == $CI_DEFAULT_BRANCH  # autodeploy from master/main
+      - $CI_PIPELINE_SOURCE == "web" # allow manual jobs from web
+      - $CI_COMMIT_REF_SLUG == $CI_DEFAULT_BRANCH # autodeploy from master/main
