@@ -10,10 +10,17 @@ updates:
     schedule:
       interval: "weekly"
       day: "tuesday"
+    versioning-strategy: increase
     groups:
+      astro:
+        dependency-name:
+          - "@astrojs/*"
+          - "astro"
+      tailwindcss:
+        dependency-name:
+          - "@tailwindcss/*"
+          - "tailwindcss"
       minor-and-patch:
         update-types:
           - "minor"
           - "patch"
-        patterns:
-          - "*"
