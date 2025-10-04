@@ -1,58 +1,56 @@
 [tools]
-deno = "2.3.3"
 node = "24.1.0"
 pnpm = "10.11.0"
 
 [tasks.init]
-run = "deno install --allow-scripts"
+run = "pnpm install"
 description = "Install dependencies"
 
 [tasks.dev]
-run = "deno task dev"
+run = "pnpm dev"
 description = "Start the development server with hot-reload"
 depends = ["init"]
 
 [tasks.build]
-run = "deno task build"
+run = "pnpm build"
 description = "Build the project for production"
 depends = ["init"]
 
 [tasks.start]
-run = "deno task start"
+run = "pnpm start"
 description = "Start the production server"
 depends = ["init"]
 
 [tasks.lint]
-run = "deno lint"
+run = "pnpm astro check"
 description = "Run the linter to check code quality"
 depends = ["init"]
 
 [tasks.test]
-run = "deno test"
+run = "pnpm test"
 description = "Run the test suite"
 depends = ["init"]
 
 [tasks.preview]
-run = "deno task preview"
+run = "pnpm preview"
 description = "Preview the production build locally"
 depends = ["init"]
 
 [tasks.format]
-run = "deno fmt"
+run = "pnpm exec prettier --write ."
 description = "Format code according to style guidelines"
 depends = ["init"]
 
 [tasks.clean]
-run = "deno clean && deno task clean"
+run = "pnpm clean"
 description = "Clean build artifacts and cache"
-depends = ["init"]
 
 [tasks.update-minor]
-run = "deno outdated --update --interactive --compatible"
+run = "pnpm update --interactive"
 description = "Update dependencies to newest minor version"
 depends = ["init"]
 
 [tasks.update-latest]
-run = "deno outdated --update --interactive --latest"
-description = "Update dependencies to newest minor version"
+run = "pnpm update --interactive --latest"
+description = "Update dependencies to newest latest version"
 depends = ["init"]
