@@ -18,10 +18,10 @@
     "@astrojs/check": "0.9.10",
     "@astrojs/mdx": "7.0.7",
     "@astrojs/rss": "4.0.19",
-    "@astrojs/sitemap": "3.7.3",
+    "@astrojs/sitemap": "3.7.4",
     "@fortawesome/fontawesome-free": "7.3.1",
     "@tailwindcss/vite": "4.3.3",
-    "astro": "7.2.4",
+    "astro": "7.3.1",
     "tailwindcss": "4.3.3",
     "typescript": "7.0.2"
   }
